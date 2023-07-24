@@ -19,7 +19,7 @@ export default function Home() {
         console.log('privateKey:', randomwallet.privateKey);
         
         const signer = await getZeroDevSigner({
-            projectId: "my_zerodev_project_id",
+            projectId: "my_zero_dev_project_id",
             owner: getPrivateKeyOwner(randomwallet.privateKey),
           })
           let aaWallet = await signer.getAddress();
@@ -83,6 +83,3 @@ export default function Home() {
                 </div>
         )
 }
-
-//https://tailwindcomponents.com/component/sign-up-form
-//https://nextjs.org/docs/pages/building-your-application/data-fetching/building-forms
